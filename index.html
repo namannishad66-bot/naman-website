@@ -2,141 +2,192 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Naman Nishad | Professional Portfolio</title>
+<title>Naman Nishad | Premium Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 body{
-  min-height:100vh;
-  background:linear-gradient(135deg,#00c6ff,#0072ff);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  transition:0.4s;
+    min-height:100vh;
+    background:radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color:white;
+    overflow-x:hidden;
 }
-
-.dark{
-  background:linear-gradient(135deg,#111,#333);
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
 }
-
-.container{
-  width:95%;
-  max-width:1100px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:20px;
+header h1{
+    font-weight:600;
+    letter-spacing:1px;
 }
-
-.card{
-  background:rgba(255,255,255,0.15);
-  backdrop-filter:blur(12px);
-  border-radius:20px;
-  padding:25px;
-  color:white;
-  box-shadow:0 15px 30px rgba(0,0,0,0.2);
-  transition:0.4s;
-}
-
-.card:hover{
-  transform:translateY(-8px) scale(1.02);
-}
-
-.profile img{
-  width:120px;
-  height:120px;
-  object-fit:cover;
-  border-radius:50%;
-  border:4px solid white;
-  margin-bottom:15px;
-}
-
-h2{font-weight:700;}
-h3{font-size:18px;margin:10px 0;}
-
-.btn{
-  display:inline-block;
-  padding:10px 18px;
-  margin:5px;
-  border-radius:30px;
-  background:white;
-  color:#0072ff;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.btn:hover{
-  background:#00c6ff;
-  color:white;
-}
-
 .toggle{
-  position:fixed;
-  top:20px;
-  right:20px;
-  cursor:pointer;
-  padding:10px 15px;
-  border-radius:30px;
-  background:white;
-  color:#333;
-  font-weight:bold;
+    background:rgba(255,255,255,0.15);
+    padding:10px 20px;
+    border-radius:30px;
+    cursor:pointer;
+}
+.container{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:30px;
+    padding:40px;
 }
 
-ul{padding-left:20px;margin-top:10px;}
-li{margin:5px 0;}
+/* Glass Card */
+.glass{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(18px);
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
 
+/* Profile */
+.profile img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+.profile h2{
+    margin-bottom:5px;
+}
+.profile p{
+    font-size:14px;
+    opacity:0.9;
+}
+.buttons{
+    margin-top:15px;
+}
+.btn{
+    display:inline-block;
+    margin:5px 5px;
+    padding:8px 14px;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:14px;
+    background:linear-gradient(135deg,#00f260,#0575e6);
+    color:white;
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Right Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+.card h3{
+    margin-bottom:10px;
+}
+.card ul{
+    padding-left:18px;
+}
+.card li{
+    font-size:14px;
+    margin-bottom:6px;
+}
+
+/* Footer */
 footer{
-  text-align:center;
-  margin-top:10px;
-  font-size:13px;
-  opacity:0.8;
+    text-align:center;
+    padding:20px;
+    opacity:0.7;
+}
+
+/* Mobile */
+@media(max-width:900px){
+    .container{
+        grid-template-columns:1fr;
+    }
+    .grid{
+        grid-template-columns:1fr;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="toggle" onclick="toggleMode()">🌙 Dark</div>
+<header>
+    <h1>🚀 Naman Nishad</h1>
+    <div class="toggle">🌙 Dark Mode</div>
+</header>
 
 <div class="container">
 
-<div class="card profile">
-  <center>
-    <img src="profile.jpg">
-    <h2>Naman Nishad</h2>
-    <h3>Clinical Lab Operator | Biotechnology Graduate</h3>
+<!-- LEFT PROFILE -->
+<div class="glass profile">
+    <img src="profile.jpg" alt="Naman Photo">
+    <h2>Hi, I'm Naman</h2>
+    <p>Clinical Lab Operator | Biotechnology Graduate</p>
     <p>📍 Kanpur Nagar</p>
-    <p>📞 9264953805</p>
-    <p>✉️ namanishad66@gmail.com</p>
 
-    <a class="btn" href="https://wa.me/919264953805" target="_blank">WhatsApp</a>
-    <a class="btn" href="mailto:namanishad66@gmail.com">Email</a>
-    <a class="btn" href="resume.pdf" download>Download Resume</a>
-  </center>
+    <div class="buttons">
+        <a class="btn" href="https://wa.me/919264953805" target="_blank">WhatsApp</a>
+        <a class="btn" href="mailto:namanishad66@gmail.com">Email</a>
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+    </div>
 </div>
 
-<div class="card">
-  <h2>👨‍💼 About Me</h2>
-  <p>
-  Motivated biotechnology graduate with hands-on experience in clinical laboratory operations, ABG handling,
-  reporting and documentation. Passionate about accuracy, teamwork and continuous learning.
-  </p>
+<!-- RIGHT CONTENT -->
+<div class="grid">
+
+<div class="glass card">
+    <h3>📘 About Me</h3>
+    <p>
+    Motivated biotechnology graduate with hands-on experience in clinical lab operations, ABG handling,
+    reporting and documentation. Passionate about accuracy, teamwork and continuous learning.
+    </p>
 </div>
 
-<div class="card">
-  <h2>🎓 Education</h2>
-  <ul>
-    <li>B.Sc Biotechnology – Kanpur Institute (2022–2025)</li>
-    <li>Intermediate – UP Board (2022)</li>
-    <li>High School – UP Board (2020)</li>
-  </ul>
+<div class="glass card">
+    <h3>🎓 Education</h3>
+    <ul>
+        <li>B.Sc Biotechnology – 2022–2025</li>
+        <li>Intermediate – UP Board</li>
+        <li>High School – UP Board</li>
+    </ul>
 </div>
 
-<div class="card">
-  <h2>💼 Experience</h2>
-  <ul>
-    <li>Oper
+<div class="glass card">
+    <h3>💼 Experience</h3>
+    <ul>
+        <li>ABG machine handling</li>
+        <li>Patient registration & reporting</li>
+        <li>Lab documentation</li>
+        <li>Diagnostic support</li>
+    </ul>
+</div>
+
+<div class="glass card">
+    <h3>🛠 Skills</h3>
+    <ul>
+        <li>Clinical Lab Operations</li>
+        <li>MS Word / Excel</li>
+        <li>Data Analysis</li>
+        <li>HTML / CSS (Learning)</li>
+    </ul>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 Naman Nishad | Premium Portfolio
+</footer>
+
+</body>
+</html>

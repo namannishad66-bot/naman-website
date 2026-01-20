@@ -1,115 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Naman Nishad | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naman Nishad | Professional Resume</title>
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(120deg,#1e3c72,#2a5298);
+color:#222;
+display:flex;
+justify-content:center;
+padding:30px;
+}
 
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+.resume{
+background:white;
+max-width:850px;
+width:100%;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: linear-gradient(120deg, #2193b0, #6dd5ed);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.header{
+text-align:center;
+border-bottom:2px solid #1e3c72;
+padding-bottom:15px;
+}
 
-    .container {
-      display: flex;
-      gap: 25px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+.header h1{
+margin:0;
+color:#1e3c72;
+}
 
-    .card {
-      background: #fff;
-      width: 320px;
-      padding: 25px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-      transition: 0.3s;
-    }
+.header p{
+margin:4px 0;
+font-size:14px;
+}
 
-    .card:hover {
-      transform: scale(1.05);
-    }
+.section{
+margin-top:25px;
+}
 
-    h1 {
-      color: #2193b0;
-      margin-bottom: 5px;
-    }
+.section h2{
+color:#1e3c72;
+border-bottom:1px solid #ccc;
+padding-bottom:5px;
+}
 
-    p {
-      color: #444;
-      font-size: 15px;
-    }
+ul{
+padding-left:20px;
+}
 
-    .skills {
-      margin: 15px 0;
-      font-weight: bold;
-    }
+.btns{
+text-align:center;
+margin-top:20px;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 8px;
-      padding: 10px 18px;
-      border-radius: 25px;
-      border: none;
-      cursor: pointer;
-      color: #fff;
-      background: linear-gradient(120deg, #2193b0, #6dd5ed);
-      text-decoration: none;
-      transition: 0.3s;
-    }
+button{
+padding:10px 18px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+margin:5px;
+background:#1e3c72;
+color:white;
+font-size:14px;
+}
 
-    .btn:hover {
-      opacity: 0.85;
-    }
-
-    footer {
-      margin-top: 10px;
-      font-size: 12px;
-      color: gray;
-    }
-  </style>
+button:hover{
+opacity:0.85;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="resume">
 
-    <!-- Profile Card -->
-    <div class="card">
-      <h1>👋 Hi, I'm Naman</h1>
-      <p><b>Frontend Web Developer 🚀</b></p>
-      <p class="skills">Skills: HTML | CSS | JavaScript</p>
+<div class="header">
+<h1>Naman Nishad</h1>
+<p>📍 Kanpur Nagar | 📞 9264953805 | ✉ namannishad66@gmail.com</p>
+<p><b>Clinical Lab Operator | Biotechnology Graduate</b></p>
+</div>
 
-      <a class="btn" href="https://wa.me/919264953805" target="_blank">📞 WhatsApp</a>
-      <a class="btn" href="mailto:yourmail@gmail.com">📧 Email</a>
+<div class="section">
+<h2>Profile Summary</h2>
+<p>
+Motivated Biotechnology graduate with hands-on experience in clinical laboratory operations and computer-based reporting.
+Skilled in ABG machine handling, data entry, documentation, and laboratory workflow support.
+Passionate about accuracy, teamwork, and continuous learning.
+</p>
+</div>
 
-      <footer>© 2026 Naman Nishad</footer>
-    </div>
+<div class="section">
+<h2>Education</h2>
+<ul>
+<li>B.Sc. Biotechnology – Kanpur Institute of Higher Education (2022–2025)</li>
+<li>Intermediate – UP Board (2022)</li>
+<li>High School – UP Board (2020)</li>
+</ul>
+</div>
 
-    <!-- About Card -->
-    <div class="card">
-      <h1>🙋 About Me</h1>
-      <p>
-        Mera naam Naman Nishad hai.  
-        Main ek beginner frontend developer hoon aur HTML, CSS aur JavaScript seekh raha hoon.  
-        Mera goal professional developer ban kar online projects banana hai.
-      </p>
+<div class="section">
+<h2>Experience</h2>
+<ul>
+<li>Operated ABG machine and prepared accurate test reports.</li>
+<li>Handled patient registration, sample entry and digital records.</li>
+<li>Maintained lab documentation and report timelines.</li>
+<li>Supported lab technicians in diagnostic procedures.</li>
+</ul>
+</div>
 
-      <a class="btn" href="#">🌐 My Projects</a>
-    </div>
+<div class="section">
+<h2>Skills</h2>
+<ul>
+<li>ABG Handling & Laboratory Operations</li>
+<li>Clinical Data Entry & Documentation</li>
+<li>MS Word, Excel, PowerPoint</li>
+<li>Sample Handling & Data Analysis</li>
+<li>Record Management</li>
+<li>Time Management & Team Coordination</li>
+</ul>
+</div>
 
-  </div>
+<div class="section">
+<h2>Achievements</h2>
+<ul>
+<li>Gold Medal – Olympiad</li>
+<li>Essay Writing Certificate – Space Day</li>
+</ul>
+</div>
 
-</body>
-</html>
+<div class="section">
+<h2>Languages</h2>
+<p>Hindi – Fluent | English – Basic (Improving)</p>
+</div>

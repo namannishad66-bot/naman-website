@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Naman Professional Website</title>
+<title>Naman Nishad | Portfolio</title>
 
 <style>
-body{
-    margin:0;
+body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(120deg, #74ebd5, #ACB6E5);
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background: linear-gradient(120deg, #1fa2ff, #12d8fa);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card{
-    background:white;
-    width:350px;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+.card {
+    background: white;
+    width: 360px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.25);
 }
 
-h1{
-    color:#333;
+h1 {
+    color: #1fa2ff;
+    margin-bottom: 5px;
 }
 
-p{
-    color:#555;
-    font-size:16px;
+p {
+    color: #444;
+    margin: 6px 0;
 }
 
-button{
-    margin-top:20px;
-    padding:12px 25px;
-    background:#4CAF50;
-    color:white;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
+.skills {
+    font-weight: bold;
+    margin: 12px 0;
 }
 
-button:hover{
-    background:#2e8b57;
-    transform:scale(1.05);
+button {
+    margin: 10px 5px;
+    padding: 12px 26px;
+    border: none;
+    border-radius: 25px;
+    background: #1fa2ff;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0f7bdc;
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: gray;
 }
 </style>
 </head>
@@ -54,12 +64,25 @@ button:hover{
 <body>
 
 <div class="card">
-    <h1>🚀 Hello Naman</h1>
-    <p>Ye tumhari professional website hai 😎</p>
-    <button onclick="alert('🔥 Great job Naman! Tum fast seekh rahe ho!')">
-        Click Me
-    </button>
+    <h1>👋 Hi, I'm Naman</h1>
+    <p>Beginner Web Developer 🚀</p>
+    <p class="skills">Skills: HTML | CSS | JavaScript</p>
+
+    <button onclick="contact()">📞 Contact Me</button>
+    <button onclick="about()">ℹ About Me</button>
+
+    <div class="footer">© 2026 Naman Nishad</div>
 </div>
+
+<script>
+function contact() {
+    window.open("https://wa.me/919264953805");
+}
+
+function about() {
+    alert("Main web development seekh raha hoon aur projects bana raha hoon 💻🔥");
+}
+</script>
 
 </body>
 </html>

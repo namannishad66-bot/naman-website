@@ -2,55 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Naman Nishad | Premium Portfolio</title>
+<title>Naman Nishad | Professional Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-:root{
-  --bg1:#0f2027;
-  --bg2:#203a43;
-  --bg3:#2c5364;
-  --card:rgba(255,255,255,0.12);
-  --text:#ffffff;
-  --accent:#00e0ff;
-}
-body.dark{
-  --bg1:#000000;
-  --bg2:#111111;
-  --bg3:#222222;
-  --card:rgba(255,255,255,0.08);
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-*{
-  box-sizing:border-box;
-  font-family:Segoe UI, sans-serif;
-}
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
 body{
-  margin:0;
   min-height:100vh;
-  background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
   display:flex;
-  flex-direction:column;
+  justify-content:center;
   align-items:center;
-  color:var(--text);
+  transition:0.4s;
 }
 
-header{
-  width:100%;
-  padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.toggle{
-  background:var(--card);
-  border:none;
-  color:white;
-  padding:8px 14px;
-  border-radius:20px;
-  cursor:pointer;
+.dark{
+  background:linear-gradient(135deg,#111,#333);
 }
 
 .container{
@@ -59,122 +29,114 @@ header{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:20px;
-  margin:30px 0;
 }
 
 .card{
-  background:var(--card);
+  background:rgba(255,255,255,0.15);
   backdrop-filter:blur(12px);
   border-radius:20px;
   padding:25px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
-  transition:0.3s;
+  color:white;
+  box-shadow:0 15px 30px rgba(0,0,0,0.2);
+  transition:0.4s;
 }
 
 .card:hover{
-  transform:translateY(-5px) scale(1.02);
+  transform:translateY(-8px) scale(1.02);
 }
 
 .profile img{
   width:120px;
   height:120px;
-  border-radius:50%;
-  border:3px solid var(--accent);
   object-fit:cover;
+  border-radius:50%;
+  border:4px solid white;
+  margin-bottom:15px;
 }
+
+h2{font-weight:700;}
+h3{font-size:18px;margin:10px 0;}
 
 .btn{
   display:inline-block;
+  padding:10px 18px;
   margin:5px;
-  padding:10px 16px;
   border-radius:30px;
-  background:var(--accent);
-  color:black;
+  background:white;
+  color:#0072ff;
   text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#00c6ff;
+  color:white;
+}
+
+.toggle{
+  position:fixed;
+  top:20px;
+  right:20px;
+  cursor:pointer;
+  padding:10px 15px;
+  border-radius:30px;
+  background:white;
+  color:#333;
   font-weight:bold;
 }
 
-footer{
-  margin:15px;
-  opacity:0.7;
-  font-size:14px;
-}
+ul{padding-left:20px;margin-top:10px;}
+li{margin:5px 0;}
 
+footer{
+  text-align:center;
+  margin-top:10px;
+  font-size:13px;
+  opacity:0.8;
+}
 </style>
 </head>
 
 <body>
 
-<header>
-<h3>🚀 Naman Nishad</h3>
-<button class="toggle" onclick="toggleMode()">🌙 Dark Mode</button>
-</header>
+<div class="toggle" onclick="toggleMode()">🌙 Dark</div>
 
 <div class="container">
 
 <div class="card profile">
-<center>
-<img src="https://i.imgur.com/8Km9tLL.png">
-<h2>Hi, I'm Naman</h2>
-<p>Clinical Lab Operator | Biotechnology Graduate</p>
-<p>📍 Kanpur Nagar</p>
+  <center>
+    <img src="profile.jpg">
+    <h2>Naman Nishad</h2>
+    <h3>Clinical Lab Operator | Biotechnology Graduate</h3>
+    <p>📍 Kanpur Nagar</p>
+    <p>📞 9264953805</p>
+    <p>✉️ namanishad66@gmail.com</p>
 
-<a class="btn" href="https://wa.me/919264953805">WhatsApp</a>
-<a class="btn" href="mailto:namannishad66@gmail.com">Email</a>
-<a class="btn" href="#">Download Resume</a>
-</center>
+    <a class="btn" href="https://wa.me/919264953805" target="_blank">WhatsApp</a>
+    <a class="btn" href="mailto:namanishad66@gmail.com">Email</a>
+    <a class="btn" href="resume.pdf" download>Download Resume</a>
+  </center>
 </div>
 
 <div class="card">
-<h2>About Me</h2>
-<p>
-Mera naam Naman Nishad hai. Main biotechnology graduate hoon aur
-clinical lab operations, ABG handling, reporting aur data documentation
-me experience rakhta hoon.  
-Mera goal professional career grow karna aur technology skills improve karna hai.
-</p>
+  <h2>👨‍💼 About Me</h2>
+  <p>
+  Motivated biotechnology graduate with hands-on experience in clinical laboratory operations, ABG handling,
+  reporting and documentation. Passionate about accuracy, teamwork and continuous learning.
+  </p>
 </div>
 
 <div class="card">
-<h2>Education</h2>
-<ul>
-<li>B.Sc Biotechnology – 2022–2025</li>
-<li>Intermediate – UP Board</li>
-<li>High School – UP Board</li>
-</ul>
+  <h2>🎓 Education</h2>
+  <ul>
+    <li>B.Sc Biotechnology – Kanpur Institute (2022–2025)</li>
+    <li>Intermediate – UP Board (2022)</li>
+    <li>High School – UP Board (2020)</li>
+  </ul>
 </div>
 
 <div class="card">
-<h2>Experience</h2>
-<ul>
-<li>ABG machine handling</li>
-<li>Patient registration & reporting</li>
-<li>Lab documentation</li>
-<li>Diagnostic support</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Skills</h2>
-<ul>
-<li>Clinical Lab Operations</li>
-<li>MS Word / Excel</li>
-<li>Data Analysis</li>
-<li>HTML / CSS (Learning)</li>
-</ul>
-</div>
-
-</div>
-
-<footer>
-© 2026 Naman Nishad | Premium Portfolio
-</footer>
-
-<script>
-function toggleMode(){
- document.body.classList.toggle("dark");
-}
-</script>
-
-</body>
-</html>
+  <h2>💼 Experience</h2>
+  <ul>
+    <li>Oper

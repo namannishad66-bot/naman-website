@@ -1,138 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Naman Nishad | Professional Resume</title>
+<meta charset="UTF-8">
+<title>Naman Nishad | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 body{
-margin:0;
-font-family:Arial, sans-serif;
-background:linear-gradient(120deg,#1e3c72,#2a5298);
-color:#222;
-display:flex;
-justify-content:center;
-padding:30px;
+  min-height:100vh;
+  background: linear-gradient(135deg,#00c6ff,#0072ff);
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-.resume{
-background:white;
-max-width:850px;
-width:100%;
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.3);
+.container{
+  width:95%;
+  max-width:1100px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:25px;
 }
 
-.header{
-text-align:center;
-border-bottom:2px solid #1e3c72;
-padding-bottom:15px;
+.card{
+  background:white;
+  border-radius:18px;
+  padding:28px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,0.25);
+  transition:0.4s;
 }
 
-.header h1{
-margin:0;
-color:#1e3c72;
+.card:hover{
+  transform:translateY(-8px) scale(1.02);
 }
 
-.header p{
-margin:4px 0;
-font-size:14px;
+h1{
+  color:#0072ff;
+  font-size:28px;
+  margin-bottom:10px;
 }
 
-.section{
-margin-top:25px;
+h2{
+  color:#333;
+  margin-bottom:8px;
 }
 
-.section h2{
-color:#1e3c72;
-border-bottom:1px solid #ccc;
-padding-bottom:5px;
+p{
+  color:#555;
+  line-height:1.6;
+  font-size:15px;
 }
 
-ul{
-padding-left:20px;
+.skills span{
+  display:inline-block;
+  background:#0072ff;
+  color:white;
+  padding:6px 12px;
+  margin:5px;
+  border-radius:20px;
+  font-size:13px;
 }
 
-.btns{
-text-align:center;
-margin-top:20px;
+.btn{
+  display:inline-block;
+  margin:10px 6px;
+  padding:12px 18px;
+  background:#0072ff;
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+  transition:0.3s;
 }
 
-button{
-padding:10px 18px;
-border:none;
-border-radius:25px;
-cursor:pointer;
-margin:5px;
-background:#1e3c72;
-color:white;
-font-size:14px;
+.btn:hover{
+  background:#0055cc;
+  transform:scale(1.05);
 }
 
-button:hover{
-opacity:0.85;
+.footer{
+  margin-top:12px;
+  font-size:13px;
+  color:#777;
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="resume">
+<div class="container">
 
-<div class="header">
-<h1>Naman Nishad</h1>
-<p>📍 Kanpur Nagar | 📞 9264953805 | ✉ namannishad66@gmail.com</p>
-<p><b>Clinical Lab Operator | Biotechnology Graduate</b></p>
+<!-- PROFILE CARD -->
+<div class="card">
+  <h1>👋 Hi, I'm Naman Nishad</h1>
+  <h2>Clinical Lab Operator | Biotechnology Graduate</h2>
+  <p>Kanpur Nagar | 📞 9264953805 | ✉️ namannishad66@gmail.com</p>
+
+  <div class="skills">
+    <span>ABG Machine</span>
+    <span>Lab Operations</span>
+    <span>Data Entry</span>
+    <span>MS Excel</span>
+    <span>Reporting</span>
+  </div>
+
+  <a class="btn" href="https://wa.me/919264953805" target="_blank">💬 WhatsApp</a>
+  <a class="btn" href="mailto:namannishad66@gmail.com">📧 Email</a>
+
+  <div class="footer">© 2026 Naman Nishad</div>
 </div>
 
-<div class="section">
-<h2>Profile Summary</h2>
-<p>
-Motivated Biotechnology graduate with hands-on experience in clinical laboratory operations and computer-based reporting.
-Skilled in ABG machine handling, data entry, documentation, and laboratory workflow support.
-Passionate about accuracy, teamwork, and continuous learning.
-</p>
+<!-- ABOUT CARD -->
+<div class="card">
+  <h2>🙋 About Me</h2>
+  <p>
+    Mera naam Naman Nishad hai. Main Biotechnology graduate hoon aur clinical
+    laboratory environment me kaam kar chuka hoon. Mujhe ABG machine handling,
+    patient data entry, report preparation aur lab documentation ka practical experience hai.
+  </p>
 </div>
 
-<div class="section">
-<h2>Education</h2>
-<ul>
-<li>B.Sc. Biotechnology – Kanpur Institute of Higher Education (2022–2025)</li>
-<li>Intermediate – UP Board (2022)</li>
-<li>High School – UP Board (2020)</li>
-</ul>
+<!-- EDUCATION CARD -->
+<div class="card">
+  <h2>🎓 Education</h2>
+  <p>
+    ✔ B.Sc Biotechnology – Kanpur Institute of Higher Education (2022–2025)<br>
+    ✔ Intermediate – UP Board (2022)<br>
+    ✔ High School – UP Board (2020)
+  </p>
 </div>
 
-<div class="section">
-<h2>Experience</h2>
-<ul>
-<li>Operated ABG machine and prepared accurate test reports.</li>
-<li>Handled patient registration, sample entry and digital records.</li>
-<li>Maintained lab documentation and report timelines.</li>
-<li>Supported lab technicians in diagnostic procedures.</li>
-</ul>
+<!-- EXPERIENCE CARD -->
+<div class="card">
+  <h2>🧪 Experience</h2>
+  <p>
+    ✔ Operated ABG machine and prepared accurate reports<br>
+    ✔ Patient registration and sample entry<br>
+    ✔ Lab documentation and reporting support<br>
+    ✔ Assisted technicians in diagnostics
+  </p>
 </div>
 
-<div class="section">
-<h2>Skills</h2>
-<ul>
-<li>ABG Handling & Laboratory Operations</li>
-<li>Clinical Data Entry & Documentation</li>
-<li>MS Word, Excel, PowerPoint</li>
-<li>Sample Handling & Data Analysis</li>
-<li>Record Management</li>
-<li>Time Management & Team Coordination</li>
-</ul>
 </div>
 
-<div class="section">
-<h2>Achievements</h2>
-<ul>
-<li>Gold Medal – Olympiad</li>
-<li>Essay Writing Certificate – Space Day</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>Languages</h2>
-<p>Hindi – Fluent | English – Basic (Improving)</p>
-</div>
+</body>
+</html>
